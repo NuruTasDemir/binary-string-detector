@@ -38,6 +38,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxOnlyNullTerminated = new System.Windows.Forms.CheckBox();
+            this.buttonCopyToClipboard = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownMinLen)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -140,12 +141,23 @@
             this.checkBoxOnlyNullTerminated.Text = "Show only null-terminated strings";
             this.checkBoxOnlyNullTerminated.UseVisualStyleBackColor = true;
             // 
+            // buttonCopyToClipboard
+            // 
+            this.buttonCopyToClipboard.Location = new System.Drawing.Point(681, 567);
+            this.buttonCopyToClipboard.Name = "buttonCopyToClipboard";
+            this.buttonCopyToClipboard.Size = new System.Drawing.Size(186, 27);
+            this.buttonCopyToClipboard.TabIndex = 8;
+            this.buttonCopyToClipboard.Text = "Copy to Clipboard";
+            this.buttonCopyToClipboard.UseVisualStyleBackColor = true;
+            this.buttonCopyToClipboard.Click += new System.EventHandler(this.buttonCopyToClipboard_Click);
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1182, 603);
+            this.Controls.Add(this.buttonCopyToClipboard);
             this.Controls.Add(this.checkBoxOnlyNullTerminated);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
@@ -179,6 +191,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBoxOnlyNullTerminated;
+        private System.Windows.Forms.Button buttonCopyToClipboard;
     }
 }
 

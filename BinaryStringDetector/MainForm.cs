@@ -46,6 +46,20 @@ namespace BinaryStringDetector
                 e.Effect = DragDropEffects.None;
         }
 
+        private void buttonCopyToClipboard_Click(object sender, EventArgs e)
+        {
+            System.Text.StringBuilder copy_buffer = new System.Text.StringBuilder();
+
+            copy_buffer.AppendLine(" === UNICODE strings (only ASCII range) === ");
+            foreach (object item in listBoxUnicodeStrings.Items) copy_buffer.AppendLine(item.ToString());
+
+            copy_buffer.AppendLine("\n === ASCII strings === ");
+            foreach (object item in listBoxAsciiStrings.Items) copy_buffer.AppendLine(item.ToString());
+
+            Clipboard.SetText(copy_buffer.ToString());
+            MessageBox.Show("All strings are copied to clipboard", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
 
     }
 }
