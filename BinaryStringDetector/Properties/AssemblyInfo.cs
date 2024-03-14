@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HEXStringDetector")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("BinaryStringDetector")]
+[assembly: AssemblyDescription("Tool to find strings in binaries")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HEXStringDetector")]
+[assembly: AssemblyCompany("NTD")]
+[assembly: AssemblyProduct("BinaryStringDetector")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
